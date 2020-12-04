@@ -1,0 +1,59 @@
+ <!-- <div style="background-image: url('https://pbs.twimg.com/media/EmZFsq5XUAACGUD.jpg');height:720px;"> -->
+    <div style="background-image: url('https://www.incimages.com/uploaded_files/image/1920x1080/objectivesoverview_364479.jpg');height:720px;">
+  <div class="col-md-4 offset-md-4" style="color:black">
+    <table>
+      <tr >
+      <th>Id</th>
+        <th>Title</th>
+        <th>Category</th>
+        <th>Quantity</th>
+        <th>Price</th>
+         <th>TotalPrice</th>
+          <th>Details</th>
+          <th colspan="2" class="text-align:center;">Request </th>
+      </tr>
+      <tr *ngFor="let asset of assets1">
+      <td>{{asset.id}}</td>
+     <td>{{asset.title}} </td>
+        <td>{{asset.category}}</td>
+        <td>{{asset.quantity}} </td>
+        <td>{{asset.price}}</td>
+         <td>{{asset.quantity*asset.price}}</td>
+          <td>{{asset.additionaldetails}}</td>
+          <td><button class="btn btn-primary" (click)="accepted(asset.category,asset.quantity,asset.quantity*asset.price)">Accepted</button></td>
+          <td><button class="btn btn-danger" (click)="rejected(asset.id)">Rejected</button></td>
+      </tr>
+    </table> 
+    </div>
+    
+    </div>
+    
+    
+  <!-- <div class="col-md-4 offset-md-4" style="color:black">
+    <table>
+      <tr >
+      &nbsp;&nbsp;&nbsp;&nbsp;<th>Id</th>
+      &nbsp;&nbsp;&nbsp;&nbsp;<th>Title</th>
+      &nbsp;&nbsp;&nbsp;&nbsp;<th>Category</th>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<th>Quantity</th>
+      &nbsp;&nbsp;&nbsp;&nbsp;<th>Price</th>
+      &nbsp;&nbsp;&nbsp;&nbsp;<th>TotalPrice</th>
+      &nbsp;&nbsp;&nbsp;&nbsp;<th>Details</th>
+      &nbsp;&nbsp;&nbsp;&nbsp; <th colspan="2" class="text-align:center;">Request </th>
+      </tr>
+      <tr *ngFor="let asset of assets1">
+      &nbsp;&nbsp;&nbsp;&nbsp;<td>{{asset.id}}</td>
+      &nbsp;&nbsp;&nbsp;&nbsp;<td>{{asset.title}} </td>
+      &nbsp;&nbsp;&nbsp;&nbsp;<td>{{asset.category}}</td>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td>{{asset.quantity}} </td>
+      &nbsp;&nbsp;&nbsp;&nbsp;<td>{{asset.price}}</td>
+      &nbsp;&nbsp;&nbsp;&nbsp;<td>{{asset.quantity*asset.price}}</td>
+      &nbsp;&nbsp;&nbsp;&nbsp;<td>{{asset.additionaldetails}}</td>
+          <td><button class="btn btn-primary" (click)="accepted(asset.id,asset.title,asset.category,asset.quantity,asset.quantity*asset.price)">Accepted</button></td>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td><button class="btn btn-danger" (click)="rejected(asset.id)">Rejected</button></td>
+      </tr>
+    </table> 
+    </div>
+    
+    </div>
+       -->

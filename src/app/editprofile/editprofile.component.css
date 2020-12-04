@@ -1,0 +1,17 @@
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color:white;
+  }
+  body {
+    /* background-image: url('https://pbs.twimg.com/media/EmZFsq5XUAACGUD.jpg'); */
+    background-image: url('https://c0.wallpaperflare.com/preview/134/372/59/abstract-background-copyspace-brainstorm.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    /* width:1365px; */
+    height:720px;
+
+  }

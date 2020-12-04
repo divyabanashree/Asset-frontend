@@ -1,0 +1,68 @@
+
+  <!-- <div style="background-image: url('https://pbs.twimg.com/media/EmZFsq5XUAACGUD.jpg');height: 720px;"> -->
+    <div style="background-image: url('https://www.allbusiness.com/asset/2017/05/business-steps.jpg');background-repeat: no-repeat;background-attachment: fixed; background-size: 100% 100%; height: 720px;">
+    <h2 class="col-md-4 offset-md-4">General Report</h2>
+<div class="col-md-4 offset-md-4">
+<table>
+  <tr>
+  <th>Id</th>
+    <th>Category</th>
+    <th>Quantity</th>
+    <th>Price </th>
+    
+  </tr>
+  <tr *ngFor="let report of reports">
+  <td>{{report.id}}</td>
+ <td>{{report.category}}</td>
+ <td>{{report.quantity}}</td>
+ <td>{{report.totalprice}}</td>
+  </tr>
+</table>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-outline-primary" (click)="totalAsset()">Total Assets</button> = {{value}}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-outline-primary"(click)="totalWorth()">Total Assets Worth </button>={{sum}}
+
+
+  
+  <!-- <h2 class="col-md-4 offset-md-4">Generate Report</h2>
+<div class="col-md-4 offset-md-4">
+<table>
+  <tr>
+    &nbsp;&nbsp;&nbsp;<th>Id</th>
+    &nbsp;&nbsp;&nbsp;<th>Category</th>
+    &nbsp;&nbsp;&nbsp;<th>Quantity</th>
+    &nbsp;&nbsp;&nbsp;<th>Total Price </th>
+    &nbsp;&nbsp;&nbsp;<th>Sum of quantity and totalprice</th>
+  </tr>
+  <tr>
+    &nbsp;&nbsp;&nbsp;<td>{{id.id}}</td>
+    &nbsp;&nbsp;&nbsp;<td>{{assets.category}}</td>
+    &nbsp;&nbsp;&nbsp;<td>{{assets.quantity}}</td>
+    &nbsp;&nbsp;&nbsp;<td>{{assets.totalprice}}</td>
+    &nbsp;&nbsp;&nbsp;<td>{{assets.quantity*assets.totalprice}}</td>
+  </tr>
+</table>
+</div>
+Total Assets = {{assets.quantity}}<br>
+Total Assets Worth ={{assets.quantity*assets.totalprice}} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

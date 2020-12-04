@@ -1,0 +1,47 @@
+<!-- <div class="view" style="background-image: url('https://pbs.twimg.com/media/EmZFsq5XUAACGUD.jpg'); height: 720px;"> -->
+  <div class="view" style="background-image: url('https://www.allbusiness.com/asset/2017/05/business-steps.jpg'); height: 720px;">
+  <table style="width:100%">
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Category</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>Total Price</th>
+      <th>Additional Details</th>
+      <th>Request</th>
+    </tr>
+    <tr *ngFor="let asset of assets">
+    <td>{{asset.userId}}</td>
+      <td>{{asset.title}}</td>
+      <td>{{asset.category}}</td>
+      <td>{{asset.quantity}}</td>
+      <td>{{asset.price}}</td>
+      <td>{{asset.price*asset.quantity}}</td>
+      <td>{{asset.additionaldetails}}</td>
+      <td><button class="btn btn-primary" (click)="request(asset.userId,asset.title,asset.category,asset.quantity,asset.price,asset.additionaldetails)">Request to admin</button></td>
+    </tr>
+  </table>
+<!-- <table style="width:100%">
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Category</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>Total Price</th>
+      <th>Additional Details</th>
+      <th>Request</th>
+    </tr>
+    <tr *ngFor="let asset of assets">
+    <td>{{asset.user_id}}</td>
+      <td>{{asset.title}}</td>
+      <td>{{asset.category}}</td>
+      <td>{{asset.quantity}}</td>
+      <td>{{asset.price}}</td>
+      <td>{{asset.price*asset.quantity}}</td>
+      <td>{{asset.additionaldetails}}</td>
+      <td><button class="btn btn-primary" (click)="request(asset.userId,asset.title,asset.category,asset.quantity,asset.price,asset.price*asset.quantity,asset.additionaldetails)">Request to admin</button></td>
+    </tr>
+  </table>
+</div> -->

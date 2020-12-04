@@ -1,0 +1,38 @@
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color:white;
+  }
+  body {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://media.istockphoto.com/photos/stock-exchange-market-concept-hand-trader-holding-smartphone-with-picture-id1191330443?b=1&k=6&m=1191330443&s=170667a&w=0&h=kpukeKkYDWMAUJaBz3JSWbhRNIGy6lYm2rkNW5E_-ic=");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: skyblue;
+  color: black;
+}
+body {
+  /* background-image: url('https://pbs.twimg.com/media/EmZFsq5XUAACGUD.jpg'); */
+  background-image: url('https://fayatek.com/wp-content/uploads/2019/07/learn-web-design-1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  /* width:1365px; */
+  height:720px;
+}
